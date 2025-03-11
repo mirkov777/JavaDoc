@@ -41,9 +41,9 @@ public class Main {
         JButton btnDoctors = new JButton("Doctors");
         JButton btnAppointments = new JButton("Appointments");
 
-        btnClients.addActionListener(e -> new ClientFrame(conn));
-        btnDoctors.addActionListener(e -> new DoctorFrame(conn));
-        btnAppointments.addActionListener(e -> new AppointmentFrame(conn));
+        btnClients.addActionListener(e -> new ClientsFrame(conn));
+        btnDoctors.addActionListener(e -> new DoctorsFrame(conn));
+        btnAppointments.addActionListener(e -> new AppointmentsFrame(conn));
 
         mainPanel.add(btnClients);
         mainPanel.add(btnDoctors);
